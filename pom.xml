@@ -1,32 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qshore.web</groupId>
-    <artifactId>webapp</artifactId>
-    <packaging>war</packaging>
+    <groupId>com.example</groupId>
+    <artifactId>TomcatMavenApp</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>webapp Maven Webapp</name>
-    <url>http://maven.apache.org</url>
+    <packaging>war</packaging>
 
     <dependencies>
-        <!-- Updated JUnit version -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.7.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.7.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Servlet API (if using servlets) -->
+        <!-- Servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -36,16 +20,6 @@
     </dependencies>
 
     <build>
-        <finalName>webapp</finalName>
-        
-        <plugins>
-            <!-- Ensure WAR packaging works correctly -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
-            </plugin>
-        </plugins>
+        <finalName>TomcatMavenApp</finalName>
     </build>
-
 </project>
